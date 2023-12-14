@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+Pods/SwiftFormat/CommandLineTool/swiftformat ./SingPassion
+
+npx lint-staged

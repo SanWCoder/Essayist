@@ -27,7 +27,7 @@ class AppCollectionViewCell: UICollectionViewCell {
     ///   - indexPath: <#indexPath description#>
     /// - Returns: <#description#>
     @objc class func dequeueReusableCell(collectionView: UICollectionView, indexPath: IndexPath) -> AppCollectionViewCell {
-        let cell: AppCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(self), for: indexPath) as! AppCollectionViewCell
+        let cell: AppCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(self), for: indexPath) as? AppCollectionViewCell ?? AppCollectionViewCell()
         return cell
     }
 

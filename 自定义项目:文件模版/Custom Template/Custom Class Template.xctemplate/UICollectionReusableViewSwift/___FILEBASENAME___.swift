@@ -22,7 +22,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
     ///   - kind: <#kind description#>
     /// - Returns: <#description#>
     @objc class func dequeueReusableSupplementaryView(collectionView: UICollectionView, indexPath: IndexPath, kind: String) -> ___FILEBASENAMEASIDENTIFIER___ {
-        let reusableSupplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(self), for: indexPath) as! ___FILEBASENAMEASIDENTIFIER___
+        let reusableSupplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(self), for: indexPath) as? ___FILEBASENAMEASIDENTIFIER___ ?? ___FILEBASENAMEASIDENTIFIER___()
         return reusableSupplementaryView
     }
 

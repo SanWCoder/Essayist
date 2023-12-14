@@ -21,7 +21,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cocoaTouchSubclass___ {
     ///   - indexPath: <#indexPath description#>
     /// - Returns: <#description#>
     @objc class func dequeueReusableCell(collectionView: UICollectionView, indexPath: IndexPath) -> ___FILEBASENAMEASIDENTIFIER___ {
-        let cell: ___FILEBASENAMEASIDENTIFIER___ = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(self), for: indexPath) as! ___FILEBASENAMEASIDENTIFIER___
+        let cell: ___FILEBASENAMEASIDENTIFIER___ = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(self), for: indexPath) as? ___FILEBASENAMEASIDENTIFIER___ ?? ___FILEBASENAMEASIDENTIFIER___()
         return cell
     }
 
